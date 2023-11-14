@@ -34,7 +34,7 @@ h1:hover {
 }
 
 .white-text {
-    color: #fff;
+    color: #0ff;
     padding-top: 10vh;
 }
 
@@ -62,7 +62,7 @@ p:hover {
 }
 
 a {
-    color: rgb(195, 0, 255);
+    color: #0ff; 
     cursor: pointer;
     text-decoration: underline;
 }
@@ -185,6 +185,7 @@ footer {
 
 .Previous, .Next {
     cursor: pointer;
+    position: absolute;
     top: 50%;
     width: auto;
     padding: 2vw;
@@ -200,7 +201,7 @@ footer {
     border-radius: 3px 0 0 3px;
 }
 
-.Previous, .Next {
+.Previous:hover, .Next:hover {
     background-color: rgba(0,0,0,0.8);
     color: white;
 }
@@ -261,8 +262,8 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 450px;
-    background-color: #f2f2f2;
+    height: 550px;
+    background-color: #0ff;
 }
 
 @media screen and (max-width: 576px) {
@@ -275,7 +276,7 @@ footer {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 450px;
+    height: 550px;
     background-color: #4d4d4d;
 }
 
@@ -308,7 +309,7 @@ footer {
     to {right: 1.75vw;}
 }
 
-.from-popup {
+.form-popup {
     border: 3px solid #f0f1f0;
     z-index: 8;
     display: none;
@@ -317,13 +318,13 @@ footer {
     right: .5vw;
 }
 
-.from-container {
+.fom-container {
     max-width: 49vw;
     padding: 1vw;
     background-color: white;
 }
 
-.from-container input[type=text] {
+.form-container input[type=text] {
     width: 100%;
     padding: .93vw;
     margin: .6vw 0 .6vw 0;

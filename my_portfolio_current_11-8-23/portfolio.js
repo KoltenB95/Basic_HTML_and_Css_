@@ -10,6 +10,10 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+    showSlides(slideIndex +=n);
+}
+
+function currentSlides(n) {
     showSlides(slideIndex = n);
 }
 
@@ -26,4 +30,12 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+}
+
+
+
+function ready() {
+    var query = new URL(window.location).searchParams.get('submit')
+    document.getElementById('submit-input').value = SubmitEvent
+    document.getElementById('submit-output').innerText = SubmitEvent
 }
